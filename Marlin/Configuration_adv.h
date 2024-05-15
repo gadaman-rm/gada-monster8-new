@@ -794,7 +794,7 @@
 
   // Safety: The probe needs time to recognize the command.
   //         Minimum command delay (ms). Enable and increase if needed.
-  #define BLTOUCH_DELAY 500
+  //#define BLTOUCH_DELAY 500
 
   /**
    * Settings for BLTOUCH Classic 1.2, 1.3 or BLTouch Smart 1.0, 2.0, 2.2, 3.0, 3.1, and most clones:
@@ -854,7 +854,7 @@
   // Define probe X and Y positions for Z1, Z2 [, Z3 [, Z4]]
   // If not defined, probe limits will be used.
   // Override with 'M422 S<index> X<pos> Y<pos>'
-  #define Z_STEPPER_ALIGN_XY { {  50.00, 50.00 }, { 460.00,  50.00}, { 460.00, 460.00}, { 50.00, 460.00 } }
+  #define Z_STEPPER_ALIGN_XY { {  50.00, 50.00 }, { 400.00,  50.00}, { 400.00, 400.00}, { 50.00, 400.00 } }
 
   /**
    * Orientation for the automatically-calculated probe positions.
