@@ -217,8 +217,9 @@ public:
  *     There's no extra effect if you have a fixed Z probe.
  */
 G29_TYPE GcodeSuite::G29() {
-  DEBUG_SECTION(log_G29, "G29", DEBUGGING(LEVELING));
 
+  DEBUG_SECTION(log_G29, "G29", DEBUGGING(LEVELING));
+  
   TERN_(PROBE_MANUALLY, static) G29_State abl;
 
   TERN_(FULL_REPORT_TO_HOST_FEATURE, set_and_report_grblstate(M_PROBE));
