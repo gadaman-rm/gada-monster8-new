@@ -1,0 +1,34 @@
+بعد از تغییرات 50 در 50 تست اول کم کردن جرک و اسلریشن 
+
+
+>>> M503
+SENDING:M503
+echo:  G21    ; Units in mm (mm)
+echo:  M149 C ; Units in Celsius
+echo:; Filament settings: Disabled
+echo:  M200 S0 D1.75
+echo:; Steps per unit:
+echo: M92 X200.00 Y200.00 Z1600.00 E195.24
+echo:; Maximum feedrates (units/s):
+echo:  M203 X300.00 Y300.00 Z4.00 E200.00
+echo:; Maximum Acceleration (units/s2):
+echo:  M201 X2500.00 Y2500.00 Z40.00 E2000.00
+echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+echo:  M204 P450.00 R600.00 T1500.00
+echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+echo:  M205 B10000.00 S0.00 T0.00 X7.00 Y7.00 Z1.00 E10.00
+echo:; Home offset:
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:; Auto Bed Leveling:
+echo:  M420 S0 Z10.00
+echo:; Material heatup parameters:
+echo:  M145 S0 H180.00 B70.00 F0
+echo:  M145 S1 H240.00 B110.00 F0
+echo:; PID settings:
+echo:  M301 P22.20 I1.08 D114.00
+echo:; Power-Loss Recovery:
+echo:  M413 S1
+echo:; Z-Probe Offset (mm):
+echo:  M851 X32.00 Y35.00 Z-1.75
+echo:; Linear Advance:
+echo:  M900 K0.00
