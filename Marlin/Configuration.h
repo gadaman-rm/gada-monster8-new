@@ -350,8 +350,8 @@
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
 // For the other hotends it is their distance from the extruder 0 hotend.
-#define HOTEND_OFFSET_X { -45 } // (mm) relative X-offset for each nozzle
-#define HOTEND_OFFSET_Y { -25 }  // (mm) relative Y-offset for each nozzle
+#define HOTEND_OFFSET_X {0.0, 20.00} // (mm) relative X-offset for each nozzle
+#define HOTEND_OFFSET_Y {0.0, 5.00}  // (mm) relative Y-offset for each nozzle
 //#define HOTEND_OFFSET_Z { 0.0, 0.00 }  // (mm) relative Z-offset for each nozzle
 
 // @section machine
@@ -1249,7 +1249,7 @@
 #define Z_PROBE_OFFSET_RANGE_MAX 0
 
 // Enable the M48 repeatability test to test probe accuracy
-//#define Z_MIN_PROBE_REPEATABILITY_TEST
+#define Z_MIN_PROBE_REPEATABILITY_TEST
 
 // Before deploy/stow pause for user confirmation
 //#define PAUSE_BEFORE_DEPLOY_STOW
@@ -1314,10 +1314,7 @@
 #define INVERT_X_DIR false
 #define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
-//#define INVERT_Z1_DIR true
-//#define INVERT_Z2_DIR false
-//#define INVERT_Z3_DIR false
-//#define INVERT_I_DIR true
+//#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false
 
@@ -1362,8 +1359,8 @@
 // @section machine
 
 // The size of the printable area
-#define X_BED_SIZE 850
-#define Y_BED_SIZE 850
+#define X_BED_SIZE 800
+#define Y_BED_SIZE 800
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
