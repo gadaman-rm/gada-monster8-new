@@ -1,0 +1,1 @@
+dfu-util -a 0 -s 0x0800C000:leave -D ./.pio/build/mks_monster8_usb_flash_drive/mks_monster8.bin -d 0483:df11
